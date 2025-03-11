@@ -8,64 +8,97 @@
 </head>
 <body>
     <header>
-        <h1>Kirubel Ayele</h1>
+        <h1 id="Name">Kirubel Ayele</h1>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="hovering"><a href="#about">About</a></li>
+                <li class="hovering"><a href="#skills">Skills</a></li>
+                <li class="hovering"><a href="#projects">Projects</a></li>
+                <li class="hovering"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm Kirubel Ayele, a passionate third-year software engineering student with a strong focus on web development. I have built multiple projects, exploring both front-end and back-end technologies to create dynamic and user-friendly applications. My expertise includes HTML, CSS, JavaScript, React, among other modern frameworks. I enjoy solving complex coding challenges and continuously improving my skills in full-stack development. Beyond coding, I am eager to learn and apply AI concepts to enhance web applications. Let's collaborate and build something innovative!</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>I have a strong foundation in front-end development, utilizing HTML, CSS, and JavaScript to create responsive and user-friendly web applications. My skills extend to React and Express, allowing me to build dynamic, full-stack applications with seamless front-end and back-end integration. I am experienced in problem-solving and debugging, ensuring optimized performance and smooth functionality. With a passion for modern web technologies, I continuously learn and adapt to new frameworks and best practices. My projects showcase my ability to develop efficient, scalable, and visually appealing web solutions.</p>
-        <ul>
-
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <img src="image/drum.png" alt="Drum Kit">
-            <p>Drum Kit Project</p>
+    <div class="container">
+        <div id="pic">
+            <div>
+                <h2 id="about">About Me</h2>
+                <p>I'm Kirubel Ayele, a passionate third-year software engineering student with a strong focus on web development. I have built multiple projects, exploring both front-end and back-end technologies to create dynamic and user-friendly applications. My expertise includes HTML, CSS, JavaScript, React, among other modern frameworks. I enjoy solving complex coding challenges and continuously improving my skills in full-stack development. Beyond coding, I am eager to learn and apply AI concepts to enhance web applications. Let's collaborate and build something innovative!</p>
+            </div>
+            <div id="picCenter">
+                <img class="round-image" src="./image/3W6A3416-removebg-preview (2).png" alt="Kirubel Ayele" />
+            </div>
         </div>
-        <div class="project">
-            <img src="image/todolist.png" alt="To-Do List">
-            <p>To-Do List App</p>
-        </div>
-    </section>
 
-    <section class="contact section" id="contact">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact__container bd-grid">
+        <div id="skills">
+            <h2>Skills</h2>
+            <p>I have a strong foundation in front-end development, utilizing HTML, CSS, and JavaScript to create responsive and user-friendly web applications. My skills extend to React and Express, allowing me to build dynamic, full-stack applications with seamless front-end and back-end integration. I continuously learn and adapt to new frameworks and best practices.</p>
+            <ul>
+                <li>Programming Languages:
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                    </ul>
+                </li>
+                <li>Frameworks:
+                    <ul>
+                        <li>React</li>
+                        <li>Node</li>
+                        <li>Express</li>
+                    </ul>
+                </li>
+                <li>Tools:
+                    <ul>
+                        <li>Git</li>
+                        <li>Visual Studio Code</li>
+                        <li>Postman</li>
+                    </ul>
+                </li>
+                <li>Databases:
+                    <ul>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </li>
+                <li>Other Skills:
+                    <ul>
+                        <li>Responsive Web Design</li>
+                        <li>API Development</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="projects">
+            <h2>Projects</h2>
+            <div class="flexing">
+                <div class="projects">
+                    <img src="image/drum.png" alt="Drum Kit"  height="200"/>
+                    <p>Drum Kit Project</p>
+                </div>
+                <div class="projects">
+                    <img src="image/todolist.png" alt="To-Do List" height="200" />
+                    <p>To-Do List App</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <h2>Contact</h2>
             <div class="contact__info">
                 <h3>Name:</h3>
                 <p>Kirubel Ayele</p>
-    
                 <h3>Address:</h3>
                 <p>Addis Ababa, Ethiopia</p>
-    
                 <h3>Phone:</h3>
                 <p>+251 912345678</p>
-    
                 <h3>Email:</h3>
                 <p>kirubel@example.com</p>
             </div>
         </div>
-    </section>
+    </div>
 
     <footer>
         <p>&copy; 2025 Kirubel Ayele. All rights reserved.</p>
