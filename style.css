@@ -64,31 +64,9 @@
     }
 
     .page {
-      display: none;
       padding: 100px;
       color: #333;
       background: #f9f9f9;
-      height: 100vh;
-    }
-
-    .page:target {
-      display: block;
-    }
-
-    #home:not(:target) ~ #about:target,
-    #home:not(:target) ~ #portfolio:target,
-    #home:not(:target) ~ #blog:target,
-    #home:not(:target) ~ #contact:target {
-      display: block;
-    }
-
-    #home:target ~ .page:not(#home) {
-      display: none;
-    }
-
-    #home:target,
-    body:not(:has(:target)) #home {
-      display: block;
     }
 
     .home {
