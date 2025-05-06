@@ -2,106 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Portfolio</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1 id="Name">Kirubel Ayele</h1>
-        <nav>
-            <ul>
-                <li class="hovering"><a href="#about">About</a></li>
-                <li class="hovering"><a href="#skills">Skills</a></li>
-                <li class="hovering"><a href="#projects">Projects</a></li>
-                <li class="hovering"><a href="#contact">Contact</a></li>
-            </ul>
+        <h2 class="logo"><span>Kiru</span>bel.</h2>
+        <nav class="navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
         </nav>
-    </header>
-
-    <div class="container">
-        <div id="pic">
-            <div>
-                <h2 id="about">About Me</h2>
-                <p>I'm Kirubel Ayele, a passionate third-year software engineering student with a strong focus on web development. I have built multiple projects, exploring both front-end and back-end technologies to create dynamic and user-friendly applications. My expertise includes HTML, CSS, JavaScript, React, among other modern frameworks. I enjoy solving complex coding challenges and continuously improving my skills in full-stack development. Beyond coding, I am eager to learn and apply AI concepts to enhance web applications. Let's collaborate and build something innovative!</p>
+        <a href="#contact" class="btn-talk">Let's Talk</a>
+      </header>
+    
+      <section id="home" class="home page">
+        <div class="home-container">
+          <div class="content">
+            <h2>Hi, I'm <span>kiruble ayele</span></h2>
+            <h4>Full stack Developer</h4>
+            <p>I am Full-Stack Developer with a passion for crafting dynamic web applications. Join me on my journey as I explore innovative solutions and develop my skills in the tech world.</p>
+            <div class="btn-group">
+              <a href="#portfolio">See Projects</a>
             </div>
-            <div id="picCenter">
-                <img class="round-image" src="./image/3W6A3416-removebg-preview (2).png" alt="Kirubel Ayele" />
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/kirubel-ayele-b88a58263/"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://x.com/Kirube_Ayele"><i class="fa-brands fa-twitter"></i></a>
             </div>
+          </div>
+          <div class="photo">
+            <img src="image/3W6A3416-removebg-preview (2).png" alt="kirubel ayele">
+          </div>
         </div>
+      </section>
+    
+      <section id="about" class="page about-section">
+        <h2>About Me</h2>
+        <p>
+          I am a student at Adama Science and Technology University. I'm currently a 3rd year full stack developer, learning and growing every day. My passion lies in building both frontend and backend systems, and I'm constantly exploring new technologies.
+        </p>
+        <p>
+          I'm especially focused on mastering data structures and algorithms to strengthen my problem-solving skills. I believe in continuous learning and strive to become a well-rounded software engineer.
+        </p>
+        </section>
+    
+        <section id="blog" class="page">
+            <h2>My Blog</h2>
+            <p>As a software development student, I’m excited to share my journey in the tech world. From diving into full-stack technologies to tackling challenging algorithms, I write to inspire and reflect on my growth.</p>
+            <p>In this blog, you’ll find insights into my projects, thoughts on industry trends, and the lessons I learn along the way. I aim to create a space where fellow learners and tech enthusiasts can connect and share ideas. Join me as I document my experiences at Adama Science and Technology University, exploring new challenges and celebrating milestones together.</p>
 
-        <div id="skills">
-            <h2>Skills</h2>
-            <p>I have a strong foundation in front-end development, utilizing HTML, CSS, and JavaScript to create responsive and user-friendly web applications. My skills extend to React and Express, allowing me to build dynamic, full-stack applications with seamless front-end and back-end integration. I continuously learn and adapt to new frameworks and best practices.</p>
-            <ul>
-                <li>Programming Languages:
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>Python</li>
-                        <li>Java</li>
-                    </ul>
-                </li>
-                <li>Frameworks:
-                    <ul>
-                        <li>React</li>
-                        <li>Node</li>
-                        <li>Express</li>
-                    </ul>
-                </li>
-                <li>Tools:
-                    <ul>
-                        <li>Git</li>
-                        <li>Visual Studio Code</li>
-                        <li>Postman</li>
-                    </ul>
-                </li>
-                <li>Databases:
-                    <ul>
-                        <li>MySQL</li>
-                        <li>MongoDB</li>
-                        <li>PostgreSQL</li>
-                    </ul>
-                </li>
-                <li>Other Skills:
-                    <ul>
-                        <li>Responsive Web Design</li>
-                        <li>API Development</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+            <P>Thank you for being part of this journey!!</p>
+          </section>
+    
+          <section id="contact" class="page">
+            <h2>Contact Me</h2>
+            <p>If you’d like to get in touch, feel free to reach out via email or through my social media channels.</p>
+            <p>Email: <a href="mailto:kirubelayele2127@gmail.com">kirubelayele2127@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/kirubel-ayele-b88a58263/">kirubel_ayele</a></p>
+            <p>Twitter: <a href="#">@Kirube_Ayele</a></p>
+            <p>Telegram: <a href="#">@kiraklaus</a></p>
+          </section>
 
-        <div id="projects">
+          <section id="portfolio" class="page">
             <h2>Projects</h2>
-            <div class="flexing">
-                <div class="projects">
-                    <img src="image/drum.png" alt="Drum Kit"  height="200"/>
-                    <p>Drum Kit Project</p>
-                </div>
-                <div class="projects">
-                    <img src="image/todolist.png" alt="To-Do List" height="200" />
-                    <p>To-Do List App</p>
-                </div>
+            <p>Here are a few of my projects with descriptions and previews.</p>
+            <div class="project-gallery">
+              <div class="project">
+                <img src="image/drum.png" alt="Project 1">
+                <p>Simple drum kit built in html, css and js.</p>
+              </div>
+              <div class="project">
+                <img src="image/todolist.png" alt="Project 2">
+                <p>a Todo list which helps for listing task and store them.</p>
+              </div>
+              <div class="project">
+                <img src="image/bandgenerator.png" alt="Project 3">
+                <p>small full stack website generate names using npm module build in node.js</p>
+              </div>
             </div>
-        </div>
-
-        <div class="contact" id="contact">
-            <h2>Contact</h2>
-            <div class="contact__info">
-                <h3>Name:</h3>
-                <p>Kirubel Ayele</p>
-                <h3>Address:</h3>
-                <p>Addis Ababa, Ethiopia</p>
-                <h3>Phone:</h3>
-                <p>+251 912345678</p>
-                <h3>Email:</h3>
-                <p>kirubel@example.com</p>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 Kirubel Ayele. All rights reserved.</p>
-    </footer>
+          </section>
+          
+          
 </body>
-</html>
+</html>.
